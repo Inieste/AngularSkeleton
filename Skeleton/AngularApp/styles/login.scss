@@ -1,0 +1,18 @@
+﻿$theme-font: verdana, sans-serif;
+$themeColor-Light: #f3e2c7;
+$themeColor-Dark: #b68d4c;
+$themeColor-Error: #ff0000;
+
+.justify-content-center {
+    font: $theme-font;
+    background-color: $themeColor-Light;
+
+}
+
+login-field-container {
+    color: $themeColor-Dark;
+}
+
+.error {
+    background-color: $themeColor-Error;
+}

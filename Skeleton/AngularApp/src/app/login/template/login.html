@@ -1,0 +1,40 @@
+﻿<div *ngIf="!isValid" id="login-send">
+    <div class="row justify-content-center">
+        <div class="login-title-container">
+            <span>Log In</span>
+        </div>
+    </div>
+    <div class="justify-content-center">
+        <div>
+            <div>
+                <input id="username"
+                        [(ngModel)]="loginInput.username"
+                        class="login-field-container"
+                        name="username"
+                        placeholder="Account Number Or Email Address"
+                        type="text">
+            </div>
+            <div class="justify-content-center">
+                <input id="password"
+                        [(ngModel)]="loginInput.password"
+                        class="login-field-container"
+                        name="password"
+                        placeholder="Password" type="password">
+            </div>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center">
+        <button (click)="submitLogin();" id="send-login">
+            LOG IN
+        </button>
+    </div>
+</div>
+
+<div *ngIf="isError">
+    <h3 class="error">Error!!</h3>
+</div>
+
+<div *ngIf="isValid">
+    <h4>Success!!</h4>
+</div>

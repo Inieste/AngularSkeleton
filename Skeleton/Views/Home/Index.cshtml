@@ -1,0 +1,17 @@
+﻿@using Microsoft.AspNetCore.Html;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Index";
+}
+
+<ul>
+    <li>@Html.ActionLink("Login", "Login", "Home")</li>
+    <li>@Html.ActionLink("Go to Legs", "Index", "Home", new { area = "Legs" })</li>
+</ul>
+
+<hr />
+
+<routes></routes>
+
+<script src="~/dist/routes.js" type="text/javascript"></script>
